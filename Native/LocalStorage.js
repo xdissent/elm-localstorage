@@ -33,7 +33,7 @@ Elm.Native.LocalStorage.make = function(localRuntime) {
     return Task.fail({ ctor: 'NoStorage' });
   }
 
-  if (!localStorage) {
+  if ('object' !== typeof localStorage) {
     return localRuntime.Native.LocalStorage.values = {
       get: storageFail,
       set: storageFail,
