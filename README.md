@@ -2,6 +2,12 @@
 
 LocalStorage task adapter for Elm
 
+Read/write/remove items from the browser's localStorage via Elm Tasks.
+Limited to string keys and values, but includes a helper for retrieving decoded
+JSON values.
+
+## Example
+
 ```elm
 import Graphics.Element exposing (..)
 import LocalStorage
